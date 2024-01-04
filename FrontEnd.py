@@ -20,7 +20,7 @@ linha3 = tk.Frame(janela)
 linha3.pack(pady=(15, 0), padx=(10, 10), anchor='nw')
 
 # Configurando o botão "Calculadora" dentro do frame_topo
-botao1 = Button(linha1, text="1", command=Funcoes.botao1, width=15, height=4,bg=BancoDeDados.CorDesejada(maquina))
+botao1 = Button(linha1, text=BancoDeDados.NomeDesejado(maquina), command=Funcoes.botao1, width=15, height=4,bg=BancoDeDados.CorDesejada(maquina))
 botao1.pack(side='left')
 botao1.bind('<Button-1>', Funcoes.clicado)
 botao1.bind('<ButtonRelease-1>', Funcoes.soltou)
